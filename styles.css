@@ -1,0 +1,48 @@
+*::before, *::after, * {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+
+.titulo {
+  text-align: center;
+  color: #303030;
+}
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-items {
+  flex: 0 0 100%;
+  border: thin solid #000;
+}
+
+
+@media (min-width: 576px) { 
+  .flex-items {
+      flex: 0 0 50%;
+  }
+ }
+
+
+@media (min-width: 768px) { 
+  .flex-items {
+      flex: 0 0 33.33333333333333%;
+  }
+ }
+
+@media (min-width: 992px) { 
+  .flex-items {
+      flex: 0 0 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-items {
+      flex: 0 0 16.66666666666667%;
+  }
+ }
